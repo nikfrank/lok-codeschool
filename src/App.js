@@ -1,19 +1,53 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+  Switch,
+  NavLink,
+} from 'react-router-dom';
+
+import Home from './Home';
+import Works from './Works';
+import Personnel from './Personnel';
+import Contact from './Contact';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Router>
+        <div className='App'>
+          <header className='App-header'>
+            <h1 className='App-title'>Codeschool Israel</h1>
+            <div className='link-container'>
+              <NavLink to="/home">
+                <div>Home</div>
+              </NavLink>
+              <NavLink to="/works">
+                <div>Works</div>
+              </NavLink>
+              <NavLink to="/personnel">
+                <div>Personnel</div>
+              </NavLink>
+              <NavLink to="/contact">
+                <div>Contact</div>
+              </NavLink>
+            </div>
+          </header>
+
+          <Switch>
+            <Route path='/home' exact component={Home}/>
+            <Route path='/works' exact component={Works}/>
+            <Route path='/personnel' exact component={Personnel}/>
+            <Route path='/contact' exact component={Contact}/>
+            <Redirect from='/' to='home'/>
+          </Switch>
+          
+          <footer className='App-footer'>Footer goes here</footer>
+        </div>
+      </Router>
     );
   }
 }
