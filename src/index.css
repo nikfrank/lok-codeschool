@@ -15,3 +15,14 @@ body {
     opacity: 1;
   }
 }
+
+@keyframes softFadeIn {
+  from {
+    transform: scale( 0.9375, 0.9375 );
+    opacity: 0.75;
+  }
+  to {
+    transform: scale( 1, 1 );
+    opacity: 1;
+  }
+}
