@@ -3,8 +3,6 @@
   flex-grow: 1;
   max-height: calc(100vh - 110px);
   overflow-y: auto;
-
-  animation: softFadeIn 700ms;
 }
 
 .Works .shade {
@@ -14,6 +12,8 @@
 }
 
 .Works .js-course {
+  animation: softFadeIn 700ms;
+  
   display: flex;
   flex-direction: row;
   justify-content: space-around;

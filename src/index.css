@@ -19,7 +19,7 @@ body {
 @keyframes softFadeIn {
   from {
     transform: scale( 0.9375, 0.9375 );
-    opacity: 0.75;
+    opacity: 0.875;
   }
   to {
     transform: scale( 1, 1 );
