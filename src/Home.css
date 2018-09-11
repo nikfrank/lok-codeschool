@@ -1,0 +1,88 @@
+.Home {
+  flex-grow: 1;
+  position: relative;
+  background-size: cover;
+}
+
+.Home .banner {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  padding: 30px;
+  font-size: 2em;
+  
+  border-radius: 8px;
+  background-color: rgba(72, 100, 175, 0.875);
+
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.Home .banner code {
+  color: #0a0;
+}
+
+.Home .frameworks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+  position: absolute;
+  top: 30%;
+  right: 20%;
+
+  min-width: 50vw;
+  
+  border-radius: 8px;
+  background-color: rgba(212, 220, 225, 0.875);
+}
+
+.Home .frameworks img {
+  height: 140px;
+  width: auto;
+  margin: 10px 20px;
+}
+
+.Home .frameworks .coming-soon img {
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+.Home .frameworks .coming-soon {
+  position: relative;
+  opacity: 0.75;
+}
+
+.Home .frameworks .coming-soon:after {
+  content: 'Coming Soon';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2px;
+  line-height: 25px;
+  color: #d33;
+}
+
+
+.Home .actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  width: 80vw;
+}
+
+.Home .actions a {
+  text-decoration: none;
+}
+
+.Home .actions a div {
+  border-radius: 8px;
+  background-color: rgba(212, 220, 225, 0.875);
+
+  padding: 18px;
+  border: 1px solid black;
+}
