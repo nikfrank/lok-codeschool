@@ -16,6 +16,7 @@
   
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   
   background-color: rgba(210, 210, 230, 0.96875);
@@ -35,6 +36,11 @@
 
 .Works .js-course:last-child {
   margin-bottom: 0;
+}
+
+.Works .js-course > *:not(img) {
+  min-width: 190px;
+  margin-bottom: 8px;
 }
 
 .Works .js-course img {
