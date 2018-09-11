@@ -20,7 +20,9 @@ class App extends Component {
       <Router>
         <div className='App'>
           <header className='App-header'>
-            <h1 className='App-title'>Codeschool Israel</h1>
+            <h1 className='App-title'>
+              <NavLink to='/'>Codeschool Israel</NavLink>
+            </h1>
             <div className='link-container'>
               <NavLink to="/home">
                 <div>Home</div>
