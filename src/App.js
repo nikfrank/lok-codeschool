@@ -45,7 +45,11 @@ class App extends Component {
             <Redirect from='/' to='home'/>
           </Switch>
           
-          <footer className='App-footer'>Footer goes here</footer>
+          <footer className='App-footer'>
+            <div>Built by: Capslok TLV</div>
+            <div/>
+            <div>Copyright Codeschool IL 2018</div>
+          </footer>
         </div>
       </Router>
     );

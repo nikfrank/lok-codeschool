@@ -48,6 +48,10 @@
   height: 40px;
   line-height: 40px;
   color: #000;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .App-title {
