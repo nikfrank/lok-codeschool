@@ -41,6 +41,8 @@
 .App-header h1 {
   margin: 0;
   width: 50vw;
+  text-align: left;
+  padding-left: 40px;
 }
 
 .App-footer {
@@ -56,4 +58,15 @@
 
 .App-title {
   font-size: 1.5em;
+}
+
+
+@media( max-width: 550px ){
+  .App-header h1 {
+    width: 100%;
+  }
+
+  .App-header .link-container {
+    display: none;
+  }
 }

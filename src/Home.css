@@ -2,12 +2,16 @@
   flex-grow: 1;
   position: relative;
   background-size: cover;
+
+  animation: fadeIn 700ms;
 }
 
 .Home .banner {
   position: absolute;
   top: 10%;
   left: 10%;
+  max-width: 70vw;
+  
   padding: 30px;
   font-size: 2em;
   
@@ -40,6 +44,28 @@
   height: 140px;
   width: auto;
   margin: 10px 20px;
+}
+
+.Home .frameworks .react-logo {
+  position: relative;
+}
+
+.Home .frameworks .react-logo img {
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+.Home .frameworks .react-logo:after {
+  content: 'React JS';
+  position: absolute;
+  color: rgba(72, 100, 175, 0.875);
+  font-weight: bold;
+  font-size: 25px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 2px 5px;
+  line-height: 25px;
 }
 
 .Home .frameworks .coming-soon img {
@@ -81,8 +107,62 @@
 
 .Home .actions a div {
   border-radius: 8px;
-  background-color: rgba(212, 220, 225, 0.875);
+  background-color: #0a0;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  margin: 2px;
+  padding: 16px;
+}
 
-  padding: 18px;
-  border: 1px solid black;
+.Home .actions a div:hover {
+  background-color: #080;
+}
+
+.Home .actions a div:active {
+  background-color: #040;
+}
+
+.Home .actions a:first-child div {
+  margin-top: -32px;
+}
+
+.Home .actions a:nth-child(2) div {
+  margin-top: -16px;
+}
+
+.Home .actions a div svg {
+  height: 24px;
+  width: 24px;
+  margin-left: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.Home .actions a div svg {
+  fill: white;
+}
+
+
+
+@media( max-width: 550px ){
+  .Home .frameworks {
+    transform: scale( 0.75, 0.75 ) translate( 90px, 0 );
+  }
+
+  .Home .actions a div {
+    min-height: 120px;
+    max-width: 20vw;
+    margin: 0 8px;
+  }
+  
+  .Home .actions a:first-child div {
+    margin: 0 8px;
+  }
+
+  .Home .actions a:nth-child(2) div {
+    margin: 0 8px;
+  }
+
 }
