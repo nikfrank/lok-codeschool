@@ -11,7 +11,7 @@
   background-color: rgba( 99, 99, 99, 0.375 );
 }
 
-.Works .js-course {
+.Works .course {
   animation: softFadeIn 700ms;
   
   display: flex;
@@ -30,31 +30,40 @@
   padding: 8px 0;
 }
 
-.Works .js-course:first-child {
+.Works .course:first-child {
   margin-top: 0;
 }
 
-.Works .js-course:last-child {
+.Works .course:last-child {
   margin-bottom: 0;
 }
 
-.Works .js-course > *:not(img) {
+.Works .course > *:not(img) {
   min-width: 190px;
   margin-bottom: 8px;
 }
 
-.Works .js-course img {
+.Works .course ul {
+  padding: 3px;;
+}
+
+.Works .course li {
+  list-style: none;
+  line-height: 1.25;
+}
+
+.Works .course img {
   height: 140px;
   width: auto;
   float: left;
 }
 
-.Works .js-course .react-logo {
+.Works .course .react-logo {
   position: relative;
   height: 200px;
 }
 
-.Works .js-course .react-logo:after {
+.Works .course .react-logo:after {
   content: 'React JS Workshops';
   position: absolute;
   color: rgba(72, 100, 175, 0.875);
@@ -63,10 +72,32 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 0 2px 5px;
+  max-width: 140px;
+  padding-bottom: 5px;
   line-height: 25px;
+  border-bottom: 1px solid #33e;
 }
 
+.Works .course .lesson {
+  padding-top: 5px;
+}
+
+.Works .links-actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.Works .signup-action {
+  background-color: #33e;
+  border-color: #33e;
+  color: white;
+  font-weight: bold;
+  font-size: 1.25em;
+  border-radius: 4px;
+  padding: 6px 11px;
+  margin-top: 8px;
+}
 
 
 .Works .xcoin-lesson {
