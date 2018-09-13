@@ -1,0 +1,70 @@
+.Personnel {
+  flex-grow: 1;
+  position: relative;
+  background-size: cover;
+  max-height: calc(100vh - 110px);
+  overflow-y: auto;
+
+  animation: fadeIn 700ms;
+}
+
+.personnelContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 1.5vh 3vw;
+  background-color: rgba(0, 0, 0, 0.35);
+  border-radius: 8px;
+
+  padding: 8px 0;
+  min-height: 65vh;
+}
+
+.personnelCard {
+  justify-content: center;
+  border-radius: 8px;
+  border: 2px solid rgb(230, 230, 250);
+  background-color: #d1d1e5;
+  margin: 2vh 1.5vw;
+  padding: 8px 0;
+  max-width: 310px;
+}
+
+.personnelCardBlurb {
+  max-width: 80%;
+  margin: 10px auto;
+}
+
+.personnelCard:first-child .headshot {
+  border-radius: 50%;
+}
+
+.personnelCard:nth-child(2) .headshot {
+  border-radius: 50%;
+  transform: rotate(-10deg);
+}
+
+.personnelCard:last-child .headshot {
+  border-radius: 50%;
+  transform: rotate(-35deg);
+}
+
+.Personnel ul.skills {
+  list-style: none;
+  min-width: 80%;
+  padding: 0;
+}
+
+.Personnel ul.skills li {
+  width: 100%;
+}
+.Personnel ul.skills li::before {
+  content: "•";
+  float: left;
+  margin-right: -60px;
+  display: inline-block;
+  width: 100px;
+  color: rgb(72, 100, 175);
+  transform: scale(2.5, 1.5);
+}

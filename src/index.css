@@ -7,22 +7,34 @@ body {
 
 @keyframes fadeIn {
   from {
-    transform: scale( 0.9375, 0.9375 );
+    transform: scale(0.9375, 0.9375);
     opacity: 0;
   }
   to {
-    transform: scale( 1, 1 );
+    transform: scale(1, 1);
     opacity: 1;
   }
 }
 
 @keyframes softFadeIn {
   from {
-    transform: scale( 0.9375, 0.9375 );
+    transform: scale(0.9375, 0.9375);
     opacity: 0.875;
   }
   to {
-    transform: scale( 1, 1 );
+    transform: scale(1, 1);
     opacity: 1;
   }
+}
+
+div::-webkit-scrollbar {
+  width: 12px;
+}
+div::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+div::-webkit-scrollbar-thumb {
+  background-color: rgba(72, 100, 175, 0.875);
+  border-radius: 9px;
 }

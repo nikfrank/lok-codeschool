@@ -5,20 +5,24 @@
   overflow-y: auto;
 }
 
+.Works::-webkit-scrollbar-track-piece {
+  background-color: rgba(99, 99, 99, 0.375);
+}
+
 .Works .shade {
   width: 100%;
   padding: 20px 0;
-  background-color: rgba( 99, 99, 99, 0.375 );
+  background-color: rgba(99, 99, 99, 0.375);
 }
 
 .Works .course {
   animation: softFadeIn 700ms;
-  
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  
+
   background-color: rgba(210, 210, 230, 0.96875);
   border-radius: 8px;
   border: 2px solid rgb(230, 230, 250);
@@ -44,7 +48,7 @@
 }
 
 .Works .course ul {
-  padding: 3px;;
+  padding: 3px;
 }
 
 .Works .course li {
@@ -64,7 +68,7 @@
 }
 
 .Works .course .react-logo:after {
-  content: 'React JS Workshops';
+  content: "React JS Workshops";
   position: absolute;
   color: rgba(72, 100, 175, 0.875);
   font-weight: bold;
@@ -98,7 +102,6 @@
   padding: 6px 11px;
   margin-top: 8px;
 }
-
 
 .Works .xcoin-lesson {
 }

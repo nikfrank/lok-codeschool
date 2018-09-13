@@ -1,0 +1,145 @@
+.Contact {
+  flex-grow: 1;
+  position: relative;
+  background-size: cover;
+  max-height: calc(100vh - 110px);
+  overflow-y: auto;
+
+  animation: fadeIn 700ms;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.Contact .form-container {
+  width: 76.16vw;
+  display: flex;
+  flex-flow: row wrap;
+  font-family: "Lato", sans-serif;
+  background-color: #eeeeee;
+  color: #b3aca7;
+  margin: 4vh auto;
+  border-radius: 8px;
+  box-shadow: 2px 2px 12px 1px #bbbbbb;
+  height: 76vh;
+}
+
+.Contact .form-header {
+  width: 71vw;
+  margin: 50px auto 20px;
+  letter-spacing: 5px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+.Contact .form {
+  width: 500px;
+  max-width: 80vw;
+  margin: 23px auto 100px auto;
+}
+
+.Contact input {
+  font-family: "Lato", sans-serif;
+  font-size: 0.875em;
+  width: 90%;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  background: transparent;
+  outline: none;
+  color: ##13505b;
+  border: solid 1px #13505b;
+  border-bottom: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.Contact input:hover {
+  background: #dddddd;
+  color: ##13505b;
+}
+
+.Contact textarea {
+  width: 90%;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  background: transparent;
+  outline: none;
+  color: #726659;
+  font-family: "Lato", sans-serif;
+  font-size: 0.875em;
+  border: solid 1px #13505b;
+  transition: all 0.3s ease-in-out;
+}
+
+.Contact textarea:hover {
+  background: #dddddd;
+  color: #13505b;
+}
+
+.Contact button.submit {
+  width: 97%;
+  height: 50px;
+  padding: 0;
+  margin: 16px 0px 0px 0px;
+  font-family: "Lato", sans-serif;
+  font-size: 0.875em;
+  background-color: #c3c3e6;
+  outline: none;
+  cursor: pointer;
+  border: solid 1px #13505b;
+  box-shadow: 2px 2px 6px 1px #bbbbbb;
+}
+
+.Contact .submit:hover {
+  color: #13505b;
+  border-top: solid 1px #13505b;
+  background-color: #b2b2d2;
+}
+
+.Contact .submit:disabled {
+  cursor: not-allowed;
+}
+
+.Contact .spin-holder {
+  position: relative;
+  height: 0;
+}
+
+.Contact .spinner {
+  position: absolute;
+  top: -16px;
+  left: calc(50% - 15px);
+
+  max-height: 30px;
+  width: auto;
+}
+
+.Contact .emailRetry {
+  float: left;
+  color: #a93f55;
+  font-weight: 600;
+  margin: 0 auto;
+  width: 76vw;
+  height: 50px;
+  background: transparent;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.Contact .textarea-counter {
+  position: relative;
+  right: 0;
+  top: 0.5vh;
+}
+
+.Contact .contact-email-div {
+  position: relative;
+}
+
+.Contact .contact-email-div img {
+  position: absolute;
+  height: 5vh;
+  left: 450px;
+  top: 8px;
+  z-index: 10;
+}
