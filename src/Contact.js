@@ -76,9 +76,9 @@ class Contact extends Component {
               />
               {!!email.length ? (
                 !!isEmailValid ? (
-                  <img src={Correct} />
+                  <img alt='' src={Correct} />
                 ) : (
-                  <img src={X} />
+                  <img alt='' src={X} />
                 )
               ) : null}
             </div>
@@ -102,7 +102,7 @@ class Contact extends Component {
                 "SUBMIT"
               ) : (
                 <div className="spin-holder">
-                  <img className="spinner" src={spinner} />
+                  <img alt='' className="spinner" src={spinner} />
                 </div>
               )}
             </button>

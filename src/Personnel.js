@@ -15,7 +15,7 @@ class Personnel extends Component {
         <div className="personnelContainer">
           <div className="personnelCard">
             <h3>CTO</h3>
-            <img className="headshot" src={Nik} />
+            <img alt='' className="headshot" src={Nik} />
             <p className="personnelCardBlurb">
               {" "}
               <strong>Nik Frank</strong> is the DIY master. He brings his vision
@@ -32,7 +32,7 @@ class Personnel extends Component {
 
           <div className="personnelCard">
             <h3>COO</h3>
-            <img className="headshot" src={Leib} />
+            <img alt='' className="headshot" src={Leib} />
             <p className="personnelCardBlurb">
               {" "}
               <strong>Leibel G</strong> is serious about being serious. Pixel
@@ -50,7 +50,7 @@ class Personnel extends Component {
 
           <div className="personnelCard">
             <h3>VP</h3>
-            <img className="headshot" src={Nach} />
+            <img alt='' className="headshot" src={Nach} />
             <p className="personnelCardBlurb">
               <strong>Nachum England</strong> is a high level thinker who with a
               wide vewpoint. Well versed in traditional Jewish thought, as well

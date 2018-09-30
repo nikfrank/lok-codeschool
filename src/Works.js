@@ -6,6 +6,8 @@ import reactLogo from './reactjs.png';
 import nodeLogo from './nodejs.png';
 import solidityLogo from './Solidity.png';
 
+import githubLogo from './github.png';
+
 class Works extends Component {
   render(){
     return (
@@ -13,11 +15,11 @@ class Works extends Component {
         <div className='shade'>
           <div className='react course'>
             <div className='react-logo'>
-              <img src={reactLogo}/>
+              <img alt='' src={reactLogo}/>
             </div>
             <div className='lesson'>
               <h4>Bitcoin Charts</h4>
-              <img/>
+              <img alt=''/>
               <ul>
                 <li>React basics (JSX)</li>
                 <li>CSS basics in React</li>
@@ -27,7 +29,7 @@ class Works extends Component {
             </div>
             <div className='lesson'>
               <h4>Snoop's Job Application Form</h4>
-              <img/>
+              <img alt=''/>
               <ul>
                 <li>Form Elements in JSX</li>
                 <li>Conditional Rendering</li>
@@ -37,7 +39,7 @@ class Works extends Component {
             </div>
             <div className='lesson'>
               <h4>My Portfolio Page</h4>
-              <img/>
+              <img alt=''/>
               <ul>
                 <li>React Client Side Routing</li>
                 <li>Responsive Design Principles</li>
@@ -46,7 +48,11 @@ class Works extends Component {
               </ul>
             </div>
             <div className='links-actions'>
-              <div>github link</div>
+              <div className='github-logo'>
+                <a href="https://github.com/nikfrank">
+                  <img src={githubLogo} alt='Check out our github'/>
+                </a>
+              </div>
               <div>
                 <button className='signup-action'>Sign up for waiting list</button>
               </div>
@@ -54,7 +60,7 @@ class Works extends Component {
           </div>
           
           <div className='node course'>
-            <img src={nodeLogo}/>
+            <img alt='' src={nodeLogo}/>
             <div>
               <h4>NodeJS Course <span style={{color:'green'}}>In Alpha</span></h4>
               <ul>
@@ -67,8 +73,8 @@ class Works extends Component {
           </div>
 
           <div className='fullstack course'>
-            <img src={reactLogo}/>
-            <img src={nodeLogo}/>
+            <img alt='' src={reactLogo}/>
+            <img alt='' src={nodeLogo}/>
             <div>
               <h4>FullStack JS Course <span style={{color:'green'}}>In Alpha</span></h4>
               <ul>
@@ -81,7 +87,7 @@ class Works extends Component {
           </div>
           
           <div className='solidity course'>
-            <img src={solidityLogo}/>
+            <img alt='' src={solidityLogo}/>
             <div>
               <h4>Solidity Course <span style={{color:'red'}}>Coming Soon</span></h4>
               <ul>

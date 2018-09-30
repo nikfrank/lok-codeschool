@@ -67,6 +67,12 @@
   height: 200px;
 }
 
+@media( max-width: 940px ) {
+  .Works .course .react-logo {
+    transform: translateX( 25px );
+  }
+}
+
 .Works .course .react-logo:after {
   content: "React JS Workshops";
   position: absolute;
@@ -91,6 +97,19 @@
   flex-direction: column;
   justify-content: space-around;
 }
+
+.Works .links-actions .github-logo {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.Works .links-actions .github-logo:after {
+  content: 'Check out our github';
+  position: absolute;
+  top: -25px;
+}
+
 
 .Works .signup-action {
   background-color: #33e;
